@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:focus {
+	@apply outline-none ring-4 ring-black ring-opacity-50;
+}
+
+main {
+	margin-top: -89px;
+}
+
+@screen lg {
+	main {
+		margin-top: -84px;
+	}
+}
