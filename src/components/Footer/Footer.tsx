@@ -1,4 +1,4 @@
-import { FaFacebook, FaLinkedin, FaRegCopyright } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import {
 	Container,
 	DescriptionList,
@@ -71,11 +71,16 @@ const Footer: React.VFC = () => {
 					}
 				/>
 
-				<div className="space-x-1 flex items-center justify-center text-gray-800 pt-10">
-					<FaRegCopyright />
+				<div className="flex flex-col items-center space-y-3 md:space-y-0 md:flex-row justify-between pt-10">
 					<Typography variant="p">
-						2022 Al&apos;s Sweeper & Sewing Center, Inc. All rights reserved.
+						&copy; 2022 Al&apos;s Sweeper & Sewing Center, Inc. All rights
+						reserved.
 					</Typography>
+
+					<PageLink
+						to="https://raymondkneipp.com"
+						page="Website by Raymond Kneipp"
+					/>
 				</div>
 			</Container>
 		</footer>
