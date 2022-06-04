@@ -13,7 +13,7 @@ const SEO: React.VFC = () => {
 		openGraph: {
 			images: [
 				{
-					url: "http://localhost:3000/img/hero.jpg",
+					url: "https://alssweeper.vercel.app/img/screenshot.png",
 					alt: "Industry Leading Experts & Trusted Family Owned Business Since 1987",
 				},
 			],
