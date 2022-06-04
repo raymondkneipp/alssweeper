@@ -71,7 +71,7 @@ const Footer: React.VFC = () => {
 					}
 				/>
 
-				<div className="flex flex-col items-center space-y-3 md:space-y-0 md:flex-row justify-between pt-10">
+				<div className="flex flex-col items-center space-y-3 md:space-y-0 md:flex-row justify-between pt-10 text-center">
 					<Typography variant="p">
 						&copy; 2022 Al&apos;s Sweeper & Sewing Center, Inc. All rights
 						reserved.
