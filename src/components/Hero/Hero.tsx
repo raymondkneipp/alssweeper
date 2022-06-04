@@ -22,7 +22,7 @@ const Hero: React.VFC = () => {
 							Clean your house with confidence by choosing an amazing vacuum.
 						</Typography>
 						<div className="gap-6 flex items-center flex-row flex-wrap justify-center">
-							<Button to="/contact" size="lg">
+							<Button to="/shop" size="lg">
 								Shop Now
 							</Button>
 							<Button to="/services" theme="ghost" size="lg">
