@@ -24,7 +24,7 @@
     <a href="https://github.com/raymondkneipp/alssweeper"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/raymondkneipp/alssweeper">View Demo</a>
+    <a href="https://alssweeper.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/raymondkneipp/alssweeper/issues">Report Bug</a>
     ·
@@ -62,7 +62,7 @@
 
 ## About The Project
 
-[![Al's Sweeper & Sewing Center Screen Shot][product-screenshot]](https://example.com)
+[![Al's Sweeper & Sewing Center Screen Shot][product-screenshot]](https://alssweeper.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
