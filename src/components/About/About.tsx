@@ -21,8 +21,6 @@ const About: React.VFC = () => {
 							<div className="rounded-xl overflow-hidden relative h-80">
 								<Image
 									src="/img/storefront.png"
-									width={400}
-									height={300}
 									layout="fill"
 									objectFit="cover"
 									alt="Al's Sweeper & Sewing Center Store"
