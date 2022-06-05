@@ -3,7 +3,7 @@ const mail = require("@sendgrid/mail");
 
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
+const handler = (req: NextApiRequest, res: NextApiResponse) => {
 	const body = JSON.parse(req.body);
 
 	const honeyPot = body.Fax;
@@ -30,3 +30,5 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 
 	res.status(200).json({ statas: "Ok" });
 };
+
+export default handler;

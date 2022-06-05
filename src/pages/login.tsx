@@ -69,11 +69,15 @@ const LoginPage: NextPage = () => {
 												<ListItem>d. Image</ListItem>
 											</List>
 										</ListItem>
-										<ListItem>3. Select "Require Shipping Address"</ListItem>
-										<ListItem>4. Select "Require Billing Address"</ListItem>
+										<ListItem>
+											3. Select &quot;Require Shipping Address&quot;
+										</ListItem>
+										<ListItem>
+											4. Select &quot;Require Billing Address&quot;
+										</ListItem>
 										<ListItem>5. Select a category for the product</ListItem>
 										<ListItem>
-											6. Click the green "Save changes" button
+											6. Click the green &quot;Save changes&quot; button
 										</ListItem>
 									</List>
 								</Card>
