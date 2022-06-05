@@ -19,7 +19,7 @@
 <h3 align="center">alssweeper</h3>
 
   <p align="center">
-	E-commerce website made for a local business
+  E-commerce website made for a local vacuum and sewing machine repair business.
     <br />
     <a href="https://github.com/raymondkneipp/alssweeper"><strong>Explore the docs »</strong></a>
     <br />
