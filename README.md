@@ -101,20 +101,23 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://commercejs.com/](https://commercejs.com/)
-2. Clone the repo
+1. Get a free Commerce.js API Key at [https://commercejs.com/](https://commercejs.com/)
+2. Get a free SendGrid API Key at [https://sendgrid.com/](https://sendgrid.com/)
+3. Clone the repo
    ```sh
    git clone https://github.com/raymondkneipp/alssweeper.git
    ```
-3. Install NPM packages
+4. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `.env.local`
+5. Enter your API keys in `.env.local`
    ```
-   NEXT_PUBLIC_CHEC_PUBLIC_API_KEY=YOUR_API_KEY
+   NEXT_PUBLIC_CHEC_PUBLIC_API_KEY="your Commerce.js API key"
+   SENDGRID_API_KEY="your SendGrid API key"
+   EMAIL="email to send form submissions to"
    ```
-5. Start local server
+6. Start local server
    ```sh
    npm run dev
    ```
@@ -137,6 +140,7 @@ Feel free to change the information presented on this webpage and create your ow
 
 - [x] Add SendGrid
   - [x] Contact form functionality
+  - [x] Honey pot filter
 - [ ] Custom checkout
 
 See the [open issues](https://github.com/raymondkneipp/alssweeper/issues) for a full list of proposed features (and known issues).

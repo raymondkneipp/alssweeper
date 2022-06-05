@@ -19,7 +19,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 	`;
 
 	const data = {
-		to: "dsstazz@gmail.com",
+		to: process.env.EMAIL,
 		from: "hello@alssweepersales.com",
 		subject: "New web form message!",
 		text: message,
