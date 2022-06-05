@@ -135,8 +135,8 @@ Feel free to change the information presented on this webpage and create your ow
 
 ## Roadmap
 
-- [ ] Add SendGrid
-  - [ ] Contact form functionality
+- [x] Add SendGrid
+  - [x] Contact form functionality
 - [ ] Custom checkout
 
 See the [open issues](https://github.com/raymondkneipp/alssweeper/issues) for a full list of proposed features (and known issues).
