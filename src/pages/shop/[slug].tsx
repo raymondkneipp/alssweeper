@@ -25,17 +25,24 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: any) {
 	const { slug } = params;
-	const { data: products } = await commerce.products.list({
-		limit: 60,
-		category_slug: [slug],
-	});
-	const { data: categories } = await commerce.categories.list();
-	const category = await commerce.categories.retrieve(slug, { type: "slug" });
 
-	return {
-		props: { products: products || null, category, categories },
-		revalidate: 60,
-	};
+	try {
+		const { data: products } = await commerce.products.list({
+			limit: 60,
+			category_slug: [slug],
+		});
+		const { data: categories } = await commerce.categories.list();
+		const category = await commerce.categories.retrieve(slug, { type: "slug" });
+
+		return {
+			props: { products: products || null, category, categories },
+			revalidate: 60,
+		};
+	} catch (error) {
+		return {
+			notFound: true,
+		};
+	}
 }
 
 interface Props {

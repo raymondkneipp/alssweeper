@@ -18,16 +18,22 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
-	const product = await commerce.products.retrieve(params.permalink, {
-		type: "permalink",
-	});
+	try {
+		const product = await commerce.products.retrieve(params.permalink, {
+			type: "permalink",
+		});
 
-	return {
-		props: {
-			product,
-		},
-		revalidate: 60,
-	};
+		return {
+			props: {
+				product,
+			},
+			revalidate: 60,
+		};
+	} catch (error) {
+		return {
+			notFound: true,
+		};
+	}
 }
 
 interface Props {
