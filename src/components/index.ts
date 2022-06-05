@@ -7,6 +7,7 @@ export { default as ActiveLink } from "./_navigation/ActiveLink/ActiveLink";
 // Form Components
 export { default as Input } from "./_form/Input/Input";
 export { default as Textarea } from "./_form/Textarea/Textarea";
+export { default as HoneyPot } from "./_form/HoneyPot/HoneyPot";
 
 // Layout Components
 export { default as Container } from "./_layout/Container/Container";

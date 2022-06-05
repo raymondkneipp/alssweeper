@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import toast from "react-hot-toast";
-import { Input, Textarea, Button } from "@components";
+import { Input, Textarea, Button, HoneyPot } from "@components";
 
 interface IFormValues {
 	"Full Name": string;
 	Email: string;
 	Message: string;
+	Fax: string;
 }
 
 const ContactForm: React.VFC = () => {
@@ -40,6 +41,7 @@ const ContactForm: React.VFC = () => {
 			onSubmit={handleSubmit(onSubmit)}
 		>
 			<Input register={register} label="Full Name" />
+			<HoneyPot register={register} label="Fax" />
 			<Input register={register} label="Email" type="email" />
 			<Textarea register={register} label="Message" />
 			<Button type="submit" disabled={loading}>
