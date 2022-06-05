@@ -47,6 +47,7 @@ const ContactPage: NextPage = () => {
 										<PageLink
 											to="https://www.google.com/maps/dir/Al's+Sweeper+Sales,+239+W+Locust+St,+Wilmington,+OH+45177/''/@39.4465689,-83.8375522,15z/data=!4m14!4m13!1m5!1m1!1s0x8840c6d8a21da3f9:0xe05e769e45ffa2a7!2m2!1d-83.8326432!2d39.4469868!1m5!1m1!1s0x8840c6d8a21da3f9:0xe05e769e45ffa2a7!2m2!1d-83.8326432!2d39.4469868!3e0"
 											page="239 W Locust St, Wilmington, OH 45177"
+											external
 										/>
 									</DescriptionListItem>
 								</DescriptionList>

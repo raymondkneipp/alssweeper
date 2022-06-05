@@ -36,6 +36,7 @@ export { default as Brands } from "./Brands/Brands";
 export { default as Badge } from "./Badge/Badge";
 export { default as Stars } from "./Stars/Stars";
 export { default as SEO } from "./SEO/SEO";
+export { default as Card } from "./Card/Card";
 
 // List Components and List Items Components
 export { default as List } from "./_list/List/List";

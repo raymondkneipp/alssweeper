@@ -42,7 +42,7 @@ const Footer: React.VFC = () => {
 									<PageLink to="/shop" page="Shop" />
 								</DescriptionListItem>
 								<DescriptionListItem>
-									<PageLink to="https://authorize.chec.io/login" page="Login" />
+									<PageLink to="/login" page="Login" />
 								</DescriptionListItem>
 							</DescriptionList>
 							<DescriptionList header="HOURS">
@@ -58,12 +58,14 @@ const Footer: React.VFC = () => {
 									<PageLink
 										to="https://www.facebook.com/AlsSweeper/?hc_ref=ARROVZoQRf0cVIWN4DEplZZvLcLAmPzvcBPTjKQ-bPlz6d0CT3l5YaYForcUAZvnYvc&fref=nf&__xts__[0]=68.ARBU9g4QxB2g2wY1jhAWMt_GctT1lcT9Vu1IqVV2r2WSYYkKW-qAyGxRuUZyLJwoyfLE583tRVEa5jhgLqAz1ZXDVASag-UxNgwhqLxEwQKcd_m0KOEvUtErYOBwiMPFcSmfrjC7I1eWQtu6gTxMvPGHq59Yh_SSVOTLc6dTnPmM280KbMYzcy7Qcme012i4jwkY0QzYsfRqeAN6C8WSN0DgUtW7WA8D2HRyFqJQSkWcY91mKuln5RV9z1ekrvcL-VF1k0vzT9iC3DVI193zALOduk-0upKhqUWfCPPLGa8wGY9ACWIW6A&__tn__=kC-R"
 										page="Facebook"
+										external
 									/>
 								</DescriptionListItem>
 								<DescriptionListItem icon={FaLinkedin}>
 									<PageLink
 										to="https://www.linkedin.com/in/dustin-scarpinski-00066552/"
 										page="LinkedIn"
+										external
 									/>
 								</DescriptionListItem>
 							</DescriptionList>
@@ -80,6 +82,7 @@ const Footer: React.VFC = () => {
 					<PageLink
 						to="https://raymondkneipp.com"
 						page="Website by Raymond Kneipp"
+						external
 					/>
 				</div>
 			</Container>
