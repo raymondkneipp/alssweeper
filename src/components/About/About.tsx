@@ -42,7 +42,7 @@ const About: React.VFC = () => {
 							/>
 							<IconCard
 								title="What We Value"
-								content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
+								content="We value compassion and integrity. We are caring and build honest relationships with everyone we encounter."
 								icon={FaHandHoldingHeart}
 							/>
 						</>
