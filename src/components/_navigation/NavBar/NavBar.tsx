@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
 	Container,
 	Typography,
@@ -13,34 +13,27 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar: React.VFC = () => {
 	const [show, setShow] = useState(false);
-	const [top, setTop] = useState(true);
 
-	const handleScroll = () => {
-		const postition = window.pageYOffset;
-		if (postition >= 70) {
-			setTop(false);
-		} else {
-			setTop(true);
-		}
-	};
+	const [scrolled, setScrolled] = useState(false);
+
+	const onScroll = useCallback(() => {
+		setScrolled(window.pageYOffset > 60);
+	}, []);
 
 	useEffect(() => {
-		window.addEventListener("scroll", handleScroll, { passive: true });
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
+		window.addEventListener("scroll", onScroll);
+		return () => window.removeEventListener("scroll", onScroll);
+	}, [onScroll]);
 
 	const variants = {
 		$all: "py-4 sticky top-0 left-0 right-0 transition z-30",
-		top: {
-			false: "bg-white shadow-md",
+		scrolled: {
+			true: "bg-white shadow-md",
 		},
 	};
 
 	return (
-		<nav className={cn(variants, { top })}>
+		<nav className={cn(variants, { scrolled })}>
 			<Container>
 				<div className="flex items-center justify-between">
 					<div className="block md:hidden">

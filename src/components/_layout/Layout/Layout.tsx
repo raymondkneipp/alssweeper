@@ -1,5 +1,4 @@
-import { Banner, Button, Cart, Footer, NavBar, Typography } from "@components";
-import PageLink from "components/_navigation/PageLink/PageLink";
+import { Banner, Cart, Footer, NavBar, Typography } from "@components";
 
 const Layout: React.FC = ({ children }) => {
 	return (
@@ -7,9 +6,7 @@ const Layout: React.FC = ({ children }) => {
 			<Cart />
 			<Banner>
 				<Typography variant="p">
-					We&apos;re offering 25% off all{" "}
-					<PageLink to="/shop" page="products" /> &amp;{" "}
-					<PageLink to="/services" page="services" />!
+					We&apos;re offering 25% off all products &amp; services!
 				</Typography>
 			</Banner>
 			<NavBar />
