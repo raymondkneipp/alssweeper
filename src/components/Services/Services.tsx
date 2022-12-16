@@ -38,7 +38,7 @@ const Services: React.VFC<Props> = ({ simple }) => {
             <>
               <IconCard
                 title="Vacuum Repair"
-                content="We will diagnose and repair vacuums of all makes and models. Charges may apply."
+                content="We will diagnose and repair vacuums of all makes and models. Charges may apply to vacuum estimates."
                 icon={GiVacuumCleaner}
               />
               <IconCard
