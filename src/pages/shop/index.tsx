@@ -4,53 +4,53 @@ import { Product } from "@chec/commerce.js/types/product";
 import { Category } from "@chec/commerce.js/types/category";
 import commerce from "@utils/commerce";
 import {
-	Container,
-	Typography,
-	Wide,
-	Spacing,
-	Layout,
-	ListProducts,
-	ListCategories,
+  Container,
+  Typography,
+  Wide,
+  Spacing,
+  Layout,
+  ListProducts,
+  ListCategories,
 } from "@components";
 
 export async function getStaticProps() {
-	const { data: products } = await commerce.products.list({ limit: 60 });
-	const { data: categories } = await commerce.categories.list();
+  const { data: products } = await commerce.products.list();
+  const { data: categories } = await commerce.categories.list();
 
-	return {
-		props: { products, categories },
-		revalidate: 60,
-	};
+  return {
+    props: { products, categories },
+    revalidate: 60,
+  };
 }
 
 interface Props {
-	products: Product[];
-	categories: Category[];
+  products: Product[];
+  categories: Category[];
 }
 
 const ShopPage: NextPage<Props> = ({ products, categories }) => {
-	const pageDesc =
-		"Shop affordable and reliable " +
-		categories.map((cat) => cat.name).join(", ");
+  const pageDesc =
+    "Shop affordable and reliable " +
+    categories.map((cat) => cat.name).join(", ");
 
-	return (
-		<Layout>
-			<NextSeo title="Shop" description={pageDesc} />
-			<Spacing>
-				<Container>
-					<Wide
-						master={
-							<>
-								<Typography variant="h1">Shop</Typography>
-								<ListCategories categories={categories} />
-							</>
-						}
-						slave={<ListProducts products={products} />}
-					/>
-				</Container>
-			</Spacing>
-		</Layout>
-	);
+  return (
+    <Layout>
+      <NextSeo title="Shop" description={pageDesc} />
+      <Spacing>
+        <Container>
+          <Wide
+            master={
+              <>
+                <Typography variant="h1">Shop</Typography>
+                <ListCategories categories={categories} />
+              </>
+            }
+            slave={<ListProducts products={products} />}
+          />
+        </Container>
+      </Spacing>
+    </Layout>
+  );
 };
 
 export default ShopPage;
