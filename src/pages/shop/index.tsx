@@ -14,13 +14,20 @@ import {
 } from "@components";
 
 export async function getStaticProps() {
-  const { data: products } = await commerce.products.list();
-  const { data: categories } = await commerce.categories.list();
+  try {
+    const { data: products } = await commerce.products.list();
+    const { data: categories } = await commerce.categories.list();
 
-  return {
-    props: { products, categories },
-    revalidate: 60,
-  };
+    return {
+      props: { products, categories },
+      revalidate: 60,
+    };
+  } catch (error) {
+    console.log(error);
+    return {
+      notFound: true,
+    };
+  }
 }
 
 interface Props {
